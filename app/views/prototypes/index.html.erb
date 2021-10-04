@@ -5,10 +5,10 @@
         <%= "こんにちは、" %>
         <%= link_to "#{current_user.name}さん", user_path(current_user.id), class: :greeting__link%>
       </div>
+    <% else %>
+    <% end %>
       <div class="card__wrapper">
         <%= render partial: "prototype", collection: @prototypes %>
       </div>
-    <% else %>
-    <% end %>
   </div>
 </main>
